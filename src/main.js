@@ -1,4 +1,4 @@
-import {lib} from './lib';
+import { lib } from './lib';
 
 class User {
   constructor(name) {
@@ -6,8 +6,9 @@ class User {
   }
 }
 async function getUser() {
-  const user = await fetch("https://api.github.com/users/juszczak");
+  const user = await fetch('https://api.github.com/users/juszczak');
   return new User(user.name);
 }
 
 lib();
+getUser();

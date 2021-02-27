@@ -7,6 +7,7 @@
     "start": "echo Hello!",
     "compile": "babel src -d dist --watch",
     "build": "sass --watch src/style.scss dist/style.css",
+    "lint": "eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,9 @@
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.8",
+    "eslint": "^7.20.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
     "sass": "^1.32.8"
   }
 }

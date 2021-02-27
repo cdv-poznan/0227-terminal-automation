@@ -1,3 +1,4 @@
 export function lib() {
-  return 1;
+  const x = [1, 2, 3, 4, 5];
+  return x;
 }
