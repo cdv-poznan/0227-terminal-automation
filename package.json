@@ -10,11 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/cdv-poznan/0227-terminal-automation.git"
   },
-  "keywords": ["javascript"],
+  "keywords": [
+    "javascript"
+  ],
   "author": "Adrian Juszczak <adrian.juszczak@cdv.pl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cdv-poznan/0227-terminal-automation/issues"
   },
-  "homepage": "https://github.com/cdv-poznan/0227-terminal-automation#readme"
+  "homepage": "https://github.com/cdv-poznan/0227-terminal-automation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
 }
