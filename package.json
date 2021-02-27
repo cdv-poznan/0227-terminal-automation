@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "echo Hello!",
+    "compile": "babel src -d dist --watch",
     "build": "sass --watch src/style.scss dist/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,9 @@
   "homepage": "https://github.com/cdv-poznan/0227-terminal-automation#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
     "sass": "^1.32.8"
   }
 }
