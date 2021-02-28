@@ -1,0 +1,2 @@
+(()=>{"use strict";(()=>{class s{constructor(s){this.name=s}}!async function(){const t=await fetch("https://api.github.com/users/juszczak");new s(t.name)}(),console.log("Hello!",[1,2,3,4,5])})()})();
+//# sourceMappingURL=main.js.map

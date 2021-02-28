@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://terminal-automation/./src/style.scss"],"names":[],"mappings":"AAGA,KACE,qBAJG,CASD,QACE,qBACA,W","file":"style.css","sourcesContent":["$bg: #f0f;\n$fg: #ff0;\n\nbody {\n  background-color: $bg;\n}\n\nul {\n  li {\n    a {\n      text-decoration: none;\n      color: #ff0;\n    }\n  }\n}\n"],"sourceRoot":""}
