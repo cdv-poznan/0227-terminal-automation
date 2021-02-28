@@ -4,7 +4,7 @@
   "description": "Educational project starter",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --port 4200 --mode development",
+    "start": "webpack serve --mode development",
     "production": "webpack --mode production",
     "lint": "eslint src --fix"
   },

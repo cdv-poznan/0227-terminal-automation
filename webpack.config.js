@@ -55,6 +55,10 @@ const config = (env, args) => {
         formatter: 'codeframe',
       }),
     ],
+    devServer: {
+      port: 4200,
+    },
+    devtool: PRODUCTION ? 'source-map' : 'eval-source-map',
   };
 };
 
