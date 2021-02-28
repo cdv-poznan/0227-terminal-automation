@@ -10,5 +10,6 @@ async function getUser() {
   return new User(user.name);
 }
 
-lib();
 getUser();
+
+console.log('Hello!', lib());
