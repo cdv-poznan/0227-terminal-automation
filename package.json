@@ -1,21 +1,25 @@
 {
   "name": "terminal-automation",
   "version": "1.0.0",
-  "description": "Educational projects",
+  "description": "Educational project starter",
   "main": "index.js",
   "scripts": {
-    "start": "echo Hello!",
-    "compile": "babel src -d dist --watch",
-    "build": "sass --watch src/style.scss dist/style.css",
-    "lint": "eslint src --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --port 4200 --mode development",
+    "production": "webpack --mode production",
+    "lint": "eslint src --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cdv-poznan/0227-terminal-automation.git"
   },
   "keywords": [
-    "javascript"
+    "javascript",
+    "webpack",
+    "babel",
+    "eslint",
+    "prettier",
+    "sass",
+    "stylelint"
   ],
   "author": "Adrian Juszczak <adrian.juszczak@cdv.pl>",
   "license": "MIT",
@@ -29,11 +33,15 @@
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.8",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.0",
     "eslint": "^7.20.0",
     "eslint-plugin-prettier": "^3.3.1",
     "html-webpack-plugin": "^5.2.0",
+    "mini-css-extract-plugin": "^1.3.9",
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
