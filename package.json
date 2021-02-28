@@ -36,7 +36,8 @@
     "idb": "^6.0.0",
     "localforage": "^1.9.0",
     "lodash": "^4.17.21",
-    "push.js": "^1.0.12"
+    "push.js": "^1.0.12",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.0",
