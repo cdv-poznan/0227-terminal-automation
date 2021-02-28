@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 
 const config = (env, args) => {
   console.log('env', env);
@@ -14,7 +15,6 @@ const config = (env, args) => {
     },
     output: {
       path: path.resolve(__dirname, './dist'),
-      // filename: ''
     },
     module: {
       rules: [
@@ -50,6 +50,9 @@ const config = (env, args) => {
       }),
       new MiniCssExtractPlugin({
         filename: 'style.css',
+      }),
+      new ESLintWebpackPlugin({
+        formatter: 'codeframe',
       }),
     ],
   };
