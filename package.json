@@ -29,7 +29,10 @@
     "url": "https://github.com/cdv-poznan/0227-terminal-automation/issues"
   },
   "homepage": "https://github.com/cdv-poznan/0227-terminal-automation#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",

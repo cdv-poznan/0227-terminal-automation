@@ -1,15 +1,1 @@
-$fg: #f0f;
-$bg: #ff0;
-
-body {
-  background-color: $bg;
-}
-
-ul {
-  li {
-    a {
-      text-decoration: none;
-      color: #ff0;
-    }
-  }
-}
+@import "bootstrap/scss/bootstrap";

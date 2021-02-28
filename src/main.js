@@ -1,15 +1,28 @@
-import { lib } from './lib';
+import { camelCase, kebabCase, lowerCase } from 'lodash';
 
-class User {
-  constructor(name) {
-    this.name = name;
-  }
-}
-async function getUser() {
-  const user = await fetch('https://api.github.com/users/juszczak');
-  return new User(user.name);
-}
+document.addEventListener('DOMContentLoaded', () => {
+  document
+    .getElementById('case-select')
+    .addEventListener('change', ($event) => {
+      const value = document.getElementById('case-input').value;
+      const targetCase = $event.target.value;
+      let output = '';
 
-getUser();
+      switch (targetCase) {
+        case 'camelCase': {
+          output = camelCase(value);
+          break;
+        }
+        case 'kebabCase': {
+          output = kebabCase(value);
+          break;
+        }
+        case 'lowerCase': {
+          output = lowerCase(value);
+          break;
+        }
+      }
 
-console.log('Hello!', lib());
+      document.getElementById('case-output').value = output;
+    });
+});

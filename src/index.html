@@ -4,6 +4,54 @@
     <title>Hello!</title>
   </head>
   <body>
-    <h1>Hello!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2 class="card-title">Cases</h2>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Input</span>
+            <input
+              id="case-input"
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Case</span>
+            <select id="case-select" class="form-select">
+              <option selected>Open this select menu</option>
+              <option value="camelCase">camelCase</option>
+              <option value="kebabCase">kebab-case</option>
+              <option value="lowerCase">lower case</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Output</span>
+            <input id="case-output" class="form-control" />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
